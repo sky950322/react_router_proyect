@@ -1,13 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&family=Ubuntu&display=swap");
+* {
+  box-sizing: border-box;
+}
 body {
+  color: white;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: poppins, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.primary-nav {
+  display: flex;
+  justify-content: flex-end;
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 16px 32px;
+}
+nav a {
+  margin-right: 16px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+/* nav a.active {
+  text-decoration: none;
+  font-weight: bold;
+} */
+.login-style {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.products-buttons a {
+  color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  background: #302b63;
+  border-radius: 20px;
+}
+.wrap {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin: 30px;
+  padding: 30px;
+  align-items: baseline;
+  background: rgb(255, 255, 255, 0.8);
+  box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+.search_bar input {
+  display: flex;
+  width: 20rem;
+  height: 2rem;
+}
+.container_features {
+  margin: 0 5rem 5rem;
+}
+.todo_container {
+  display: flex;
+}
+button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+}
+input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
 }
